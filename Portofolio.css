@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*, html
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: linear-gradient(to bottom , rgb(255, 255, 255), rgb(168, 197, 255) 100%);
+}   
+
+nav
+{
+    background-color: rgb(227, 248, 255);
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    font-family: 'Young Serif', serif;
+    align-items: center;
+}
+
+nav ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li
+{
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: 0.4s;
+    opacity: 0.5;
+}
+
+nav li:hover
+{
+    opacity: 1;
+    color: blue;
+}
+
+.Logo
+{
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+    transition: 0.2s;
+}
+
+.Logo:hover
+{
+    height: 60px;
+    width: 60px;
+}
+
+a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.Foto
+{
+    display: flex;
+    width: 600px;
+    height: 600px;
+    justify-content: center;
+    margin-left: auto; 
+    margin-right: 1px;
+    margin-top: 50px;
+    transition: 0.5s;
+}
+
+.Foto:hover
+{
+    width: 900px;
+    height: 900px;
+}
+
+.Kata
+{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s ease-in-out forwards;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
